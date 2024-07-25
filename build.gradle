@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
     id 'idea'
     id "com.diffplug.spotless" version "6.25.0"
-    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'io.github.goooler.shadow' version '8.1.7'
 }
 
 subprojects {
@@ -17,7 +17,7 @@ subprojects {
 allprojects {
     apply plugin: 'java-library'
     group = 'net.wesjd'
-    version = '1.9.5-SNAPSHOT'
+    version = '1.10.1-SNAPSHOT'
 
 
     apply plugin: 'com.diffplug.spotless'
@@ -122,6 +122,7 @@ dependencies {
     implementation project(':NMS:1_20_R2')
     implementation project(':NMS:1_20_R3')
     implementation project(':NMS:1_20_R4')
+    implementation project(':NMS:1_21_R1')
     implementation project(':NMS:paper')
 }
 

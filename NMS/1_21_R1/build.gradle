@@ -1,0 +1,10 @@
+dependencies {
+    compileOnly project(':abstraction')
+
+    compileOnly 'org.spigotmc:spigot:1.21-R0.1-SNAPSHOT'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
